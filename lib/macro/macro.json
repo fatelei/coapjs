@@ -1,19 +1,41 @@
 {
-	"options": {
-		"1": "If-Match",
-		"3": "Uri-Host",
-		"4": "ETag",
-		"5": "If-None-Match",
-		"7": "Uri-Port",
-		"8": "Location-Path",
-		"11": "Uri-Path",
-		"12": "Content-Format",
-		"14": "Max-Age",
-		"15": "Uri-Query",
-		"17": "Accept",
-		"20": "Location-Query",
-		"35": "Proxy-Uri",
-		"39": "Proxy-Schema",
-		"60": "Size1"
-	}
+    "options": {
+        "1": "If-Match",
+        "3": "Uri-Host",
+        "4": "ETag",
+        "5": "If-None-Match",
+        "7": "Uri-Port",
+        "8": "Location-Path",
+        "11": "Uri-Path",
+        "12": "Content-Format",
+        "14": "Max-Age",
+        "15": "Uri-Query",
+        "17": "Accept",
+        "20": "Location-Query",
+        "35": "Proxy-Uri",
+        "39": "Proxy-Schema",
+        "60": "Size1"
+    },
+    "reverse_options": {
+        "If-Match": 1,
+        "Uri-Host": 3,
+        "ETag": 4,
+        "If-None-Match": 5,
+        "Uri-Port": 7,
+        "Location-Path": 8,
+        "Uri-Path": 11,
+        "Content-Format": 12,
+        "Max-Age": 14,
+        "Uri-Query": 15,
+        "Accept": 17,
+        "Location-Query": 20,
+        "Proxy-Uri": 35,
+        "Proxy-Schema": 39,
+        "Size1": 60
+    },
+    "ack_timeout": 2000,
+    "ack_random_factor": 1.5,
+    "max_retransmit": 4,
+    "nstart": 1,
+    "default_leisure": 5000
 }
