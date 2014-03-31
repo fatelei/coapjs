@@ -17,5 +17,8 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/fatelei/coapjs/issues"
+  },
+  "devDependencies": {
+    "mocha": "*"
   }
 }
