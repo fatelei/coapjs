@@ -1,20 +1,20 @@
 {
     "options": {
-        "1": "If-Match",
-        "3": "Uri-Host",
-        "4": "ETag",
-        "5": "If-None-Match",
-        "7": "Uri-Port",
-        "8": "Location-Path",
-        "11": "Uri-Path",
-        "12": "Content-Format",
-        "14": "Max-Age",
-        "15": "Uri-Query",
-        "17": "Accept",
-        "20": "Location-Query",
-        "35": "Proxy-Uri",
-        "39": "Proxy-Schema",
-        "60": "Size1"
+        "1": "If-Match",        //critical
+        "3": "Uri-Host",        //critical
+        "4": "ETag",            //elective
+        "5": "If-None-Match",   //critical
+        "7": "Uri-Port",        //critical
+        "8": "Location-Path",   //elective
+        "11": "Uri-Path",       //critical
+        "12": "Content-Format", //elective
+        "14": "Max-Age",        //elective
+        "15": "Uri-Query",      //critical
+        "17": "Accept",         //critical
+        "20": "Location-Query", //elective
+        "35": "Proxy-Uri",      //critical
+        "39": "Proxy-Schema",   //critical
+        "60": "Size1"           //elective
     },
     "reverse_options": {
         "If-Match": 1,
