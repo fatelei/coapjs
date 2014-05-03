@@ -2,14 +2,14 @@
  * coap client demo
  */
 
-var CoAPClient = require("../index").CoAPClient;
+var agent = require("../index").agent;
 
 if (require.main === module) {
-  var client = new CoAPClient(5683, "localhost");
-
-  client.on("message", function (message) {
-    console.log(message);
+  agent.request("coap://127.0.0.1/info", "GET", function (err, data) {
+    if (err) {
+      console.error(err);
+    } else {
+      console.info(data.payload);
+    }
   });
-
-  client.sendConfirm();
 }

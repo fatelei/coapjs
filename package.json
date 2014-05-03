@@ -19,7 +19,8 @@
     "url": "https://github.com/fatelei/coapjs/issues"
   },
   "dependencies": {
-    "simple-lru-cache": "git+ssh://git@github.com:fatelei/simple-lru-cache.git"
+    "simple-lru-cache": "git+ssh://git@github.com:fatelei/simple-lru-cache.git",
+    "normalizeurl": "*"
   },
   "devDependencies": {
     "mocha": "*"

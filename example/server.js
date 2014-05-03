@@ -4,14 +4,21 @@
 
 var CoAPServer = require("../index").CoAPServer;
 
-if (require.main === module) {
-  var server = new CoAPServer(5683);
+var info = function (req, res) {
+	return res.end("hello world");
+}
 
+if (require.main === module) {
+  var server = new CoAPServer();
+
+  server.get('info', info);
+
+  server.listen();
   server.on("error", function (err) {
-    console.error(err);
+    console.error(err.stack);
   });
 
-  server.on("sent", function (msgType, packet) {
-    console.log(packet);
+  server.on("response", function (client) {
+    console.log("response");
   });
 }

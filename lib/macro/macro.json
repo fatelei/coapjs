@@ -1,20 +1,20 @@
 {
     "options": {
-        "1": "If-Match",        //critical
-        "3": "Uri-Host",        //critical
-        "4": "ETag",            //elective
-        "5": "If-None-Match",   //critical
-        "7": "Uri-Port",        //critical
-        "8": "Location-Path",   //elective
-        "11": "Uri-Path",       //critical
-        "12": "Content-Format", //elective
-        "14": "Max-Age",        //elective
-        "15": "Uri-Query",      //critical
-        "17": "Accept",         //critical
-        "20": "Location-Query", //elective
-        "35": "Proxy-Uri",      //critical
-        "39": "Proxy-Schema",   //critical
-        "60": "Size1"           //elective
+        "1": "If-Match",
+        "3": "Uri-Host",
+        "4": "ETag",
+        "5": "If-None-Match",
+        "7": "Uri-Port",
+        "8": "Location-Path",
+        "11": "Uri-Path",
+        "12": "Content-Format",
+        "14": "Max-Age",
+        "15": "Uri-Query",
+        "17": "Accept",
+        "20": "Location-Query",
+        "35": "Proxy-Uri",
+        "39": "Proxy-Schema",
+        "60": "Size1"
     },
     "reverse_options": {
         "If-Match": 1,
@@ -34,9 +34,10 @@
         "Size1": 60
     },
     "method_codes": {
-        "get": 1,
-        "post": 2,
-        "put": 3,
-        "delete": 4
-    }
+        "get": "0.01",
+        "post": "0.02",
+        "put": "0.03",
+        "delete": "0.04"
+    },
+    "schema": ["coap:", "coaps:"]
 }
