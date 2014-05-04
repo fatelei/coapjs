@@ -1,8 +1,15 @@
 CoAPJS
 ======
 
-CoAP Protocol Implement In NodeJS
+# demo
+## server
+	node example/server.js
 
+## client
+	node example/client.js
+
+
+# CoAP Protocol
 
 CoAP Status Code
 ----------------------
@@ -29,72 +36,80 @@ CoAP Status Code
 	  
 	* 2.05
 	
-	  Like HTTP 200 "OK", but only used in response to GET requests.2. Client Error 4.xx
-   This class of response code is intended for cases in which the client seems to have erred.  These response codes are applicable to any request method.
+	  Like HTTP 200 "OK", but only used in response to GET requests.
+
+
+
+2. Client Error 4.xx
+
+   This class of response code is intended for cases in which the client seems to have erred.  These response codes are applicable to any request method.
 
    * 4.00
    
-     Like HTTP 400 "Bad Request".
-     
+	 Like HTTP 400 "Bad Request".
+	 
    * 4.01
    
-     The client is not authorized to perform the requested action.  The client SHOULD NOT repeat the request without first improving its authentication status to the server.
-     
+	 The client is not authorized to perform the requested action.  The client SHOULD NOT repeat the request without first improving its authentication status to the server.
+	 
    * 4.02
-     
-     The request could not be understood by the server due to one or more unrecognized or malformed options.  The client SHOULD NOT repeat the request without modification.
-     
+	 
+	 The request could not be understood by the server due to one or more unrecognized or malformed options.  The client SHOULD NOT repeat the request without modification.
+	 
    * 4.03
    
-     Like HTTP 403 "Forbidden".
-     
+	 Like HTTP 403 "Forbidden".
+	 
    * 4.04
    
-     Like HTTP 404 "Not Found".
-     
+	 Like HTTP 404 "Not Found".
+	 
    * 4.05
    
-     Like HTTP 405 "Method Not Allowed", but with no parallel to the "Allow" header field.
-     
+	 Like HTTP 405 "Method Not Allowed", but with no parallel to the "Allow" header field.
+	 
    * 4.06
    
-     Like HTTP 406 "Not Acceptable", but with no response entity.
-     
+	 Like HTTP 406 "Not Acceptable", but with no response entity.
+	 
    * 4.12
    
-     Like HTTP 412 "Precondition Failed".
-     
+	 Like HTTP 412 "Precondition Failed".
+	 
    * 4.13
    
-     Like HTTP 413 "Request Entity Too Large".
-     
+	 Like HTTP 413 "Request Entity Too Large".
+	 
    * 4.15
    
-     Like HTTP 415 "Unsupported Media Type".
-     
-     
+	 Like HTTP 415 "Unsupported Media Type".
+	 
+	 
 3. Server Error 5.xx
 
    * 5.00
    
-     Like HTTP 500 "Internal Server Error".
-     
+	 Like HTTP 500 "Internal Server Error".
+	 
    * 5.01
    
-     Like HTTP 501 "Not Implemented".
-     
+	 Like HTTP 501 "Not Implemented".
+	 
    * 5.02
    
-     Like HTTP 502 "Bad Gateway".
-     
+	 Like HTTP 502 "Bad Gateway".
+	 
    * 5.03
    
-     Like HTTP 503 "Service Unavailable", but using the Max-Age Option in place of the "Retry-After" header field to indicate the number of seconds after which to retry.
-     
+	 Like HTTP 503 "Service Unavailable", but using the Max-Age Option in place of the "Retry-After" header field to indicate the number of seconds after which to retry.
+	 
    * 5.04
    
-     Like HTTP 504 "Gateway Timeout".   * 5.05
-     The server is unable or unwilling to act as a forward-proxy for the URI specified in the Proxy-Uri Option or using Proxy-Scheme.
+	 Like HTTP 504 "Gateway Timeout".
+
+
+   * 5.05
+	 The server is unable or unwilling to act as a forward-proxy for the URI specified in the Proxy-Uri Option or using Proxy-Scheme.
 
 
 
