@@ -34,10 +34,10 @@
         "Size1": 60
     },
     "method_codes": {
-        "get": "0.01",
-        "post": "0.02",
-        "put": "0.03",
-        "delete": "0.04"
+        "GET": "0.01",
+        "POST": "0.02",
+        "PUT": "0.03",
+        "DELETE": "0.04"
     },
     "schema": ["coap:", "coaps:"]
 }

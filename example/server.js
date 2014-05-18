@@ -13,15 +13,6 @@ if (require.main === module) {
   }
 
   var app = new CoAPServer();
-
-  app.get('info', info);
-
+  app.get('/info', info);
   app.listen();
-  app.on("error", function (err) {
-    console.error(err.stack);
-  });
-
-  app.on("response", function (client) {
-    console.log("response");
-  });
 }
