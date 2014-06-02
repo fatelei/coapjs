@@ -20,7 +20,8 @@
   },
   "dependencies": {
     "simple-lru-cache": "git+ssh://git@github.com:fatelei/simple-lru-cache.git",
-    "normalizeurl": "*"
+    "normalizeurl": "*",
+    "coap-message": "git+ssh://git@github.com:fatelei/coap-message.git"
   },
   "devDependencies": {
     "mocha": "*"
