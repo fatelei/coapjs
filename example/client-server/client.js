@@ -8,7 +8,7 @@ if (require.main === module) {
   var client = new CoAPClient();
   var options = {
     host: 'localhost',
-    port: 5368,
+    port: 5638,
     method: 'GET',
     path: '/info',
     type: 'confirmable'
