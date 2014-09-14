@@ -1,9 +1,9 @@
 // internal endpoint
 
-var CoAPServer = require('../index').CoAPServer;
-var CoAPClient = require('../index').CoAPClient;
+var CoAPServer = require('../../index').CoAPServer;
+var CoAPClient = require('../../index').CoAPClient;
 var Cache = require('simple-lru-cache');
-var fromUrlToOptions = require('../lib/utils/convert').fromUrlToOptions;
+var fromUrlToOptions = require('../../lib/utils/convert').fromUrlToOptions;
 
 
 if (require.main === module) {

@@ -2,7 +2,7 @@
  * a basic coap server
  */
 
-var CoAPServer = require('../index').CoAPServer;
+var CoAPServer = require('../../index').CoAPServer;
 
 
 if (require.main === module) {

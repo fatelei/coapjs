@@ -2,7 +2,7 @@
  * coap client demo
  */
 
-var CoAPClient = require('../index').CoAPClient;
+var CoAPClient = require('../../index').CoAPClient;
 
 if (require.main === module) {
   var client = new CoAPClient();
