@@ -1,9 +1,9 @@
 // internal endpoint
 
-var CoAPServer = require("../index").CoAPServer;
-var CoAPClient = require("../index").CoAPClient;
+var CoAPServer = require('../index').CoAPServer;
+var CoAPClient = require('../index').CoAPClient;
 var Cache = require('simple-lru-cache');
-var fromUrlToOptions = require("../lib/utils/convert").fromUrlToOptions;
+var fromUrlToOptions = require('../lib/utils/convert').fromUrlToOptions;
 
 
 if (require.main === module) {
@@ -25,17 +25,17 @@ if (require.main === module) {
       options.method = req.method;
 
       if (req.type.confirm) {
-        options.type = "confirmable";
+        options.type = 'confirmable';
       } else if (req.type.unconfirm) {
-        options.type = "unconfirmable"
+        options.type = 'unconfirmable';
       }
 
       var tmpPath = [];
       for (var i = 0; i < tmp[2].length; i++) {
-        if (tmp[2][i].hasOwnProperty("Uri-Path")) {
-          tmpPath.push(tmp[2][i]["Uri-Path"]);
+        if (tmp[2][i].hasOwnProperty('Uri-Path')) {
+          tmpPath.push(tmp[2][i]['Uri-Path']);
         }
-        options.path = "/" + tmpPath.join("/");
+        options.path = '/' + tmpPath.join('/');
       }
 
       var client = new CoAPClient();
@@ -48,7 +48,7 @@ if (require.main === module) {
       });
 
     } else {
-      return callback(res.end(4.00, "bad request"));
+      return callback(res.end(4.00, 'bad request'));
     }
   };
 
