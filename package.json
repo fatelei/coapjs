@@ -1,6 +1,6 @@
 {
   "name": "coapjs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "coap nodejs",
   "main": "index.js",
   "scripts": {
