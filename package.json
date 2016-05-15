@@ -1,6 +1,6 @@
 {
   "name": "coapjs",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "coap nodejs",
   "main": "index.js",
   "scripts": {
@@ -19,12 +19,11 @@
     "url": "https://github.com/fatelei/coapjs/issues"
   },
   "dependencies": {
-    "simple-lru-cache": "git+ssh://git@github.com:fatelei/simple-lru-cache.git",
-    "normalizeurl": "*",
+    "normalizeurl": "~0.1.3",
     "coap-message": "git+ssh://git@github.com:fatelei/coap-message.git",
     "memory-storage": "~1.2.2"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "~2.4.5"
   }
 }
