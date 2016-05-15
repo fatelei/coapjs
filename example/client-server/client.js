@@ -2,11 +2,11 @@
  * coap client demo
  */
 
-var CoAPClient = require('../../index').CoAPClient;
+const CoAPClient = require('../../index').CoAPClient;
 
 if (require.main === module) {
-  var client = new CoAPClient();
-  var options = {
+  const client = new CoAPClient();
+  const options = {
     host: 'localhost',
     port: 5638,
     method: 'GET',
@@ -14,7 +14,7 @@ if (require.main === module) {
     type: 'confirmable'
   }
 
-  client.request(options, function(err, result) {
+  client.request(options, (err, result) => {
     if (err) {
       console.error(err);
     } else {
